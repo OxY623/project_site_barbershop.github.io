@@ -32,7 +32,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     color: #efe9e9;
     background-color: #000000;
@@ -56,7 +56,8 @@ h2 {
     font-weight: 400;
     font-size: 30px;
     line-height: 42px;
-    text-align: center;
+    text-align: left;
+    padding-left: 40px;
     text-transform: uppercase;
     color: #000000;
 }
@@ -207,7 +208,7 @@ h2 {
 
     background: url("../img/font.jpg"), #FFFFFF;
     background-repeat: repeat;
-    border-radius: 0px;
+    border-radius: 20px;
     width: 800px;
     display: flex;
     justify-content: space-between;
@@ -218,6 +219,15 @@ h2 {
 }
 .news{
 width: 340px;
+}
+.gallery{
+    width: 300px;
+}
+.contacts{
+    width: 398px;
+}
+.appointmant{
+    width: 398px;
 }
 .news,
 .news-about {
@@ -236,49 +246,48 @@ font-style: normal;
 font-weight: 400;
 font-size: 30px;
 line-height: 42px;
-text-align: center;
+
 text-transform: uppercase;
 color: #000000;
 }
 .news-list{
     list-style-type: none ;
 }
+.news-about{
+    font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
 
+text-align: center;
+text-transform: uppercase;
+
+color: #000000;
+}
 
 
 
 .page-footer {
-
     background: url("../img/footer.jpg"), #FCFCFC;
     background-repeat: repeat;
     border-radius: 0px;
 }
 
 .news-date {
-    font-family: 'PT Sans Narrow';
-    font-style: normal;
-    font-weight: 400;
+      font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    /* identical to box height, or 171% */
-
-    text-align: center;
-
+     text-align: center;
     color: #000000;
 
 }
 
 .contacts-subtitle {
-    font-family: 'PT Sans Narrow';
-    font-style: normal;
-    font-weight: 700;
+        font-weight: 700;
     font-size: 14px;
     line-height: 24px;
-    /* identical to box height, or 171% */
-
-    text-align: center;
+      text-align: center;
     text-transform: uppercase;
-
     color: #000000;
 }
 
@@ -286,10 +295,7 @@ color: #000000;
 .contacts-shedule-item,
 .appointmant p,
 .contacts-phone {
-    font-family: 'PT Sans Narrow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+      font-size: 14px;
     line-height: 24px;
     text-transform: uppercase;
     color: #000000;
@@ -297,87 +303,71 @@ color: #000000;
 
 .page-footer a,
 .page-footer p {
-    font-family: 'PT Sans Narrow';
-    font-style: normal;
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    /* identical to box height, or 171% */
-
-    text-align: center;
-    text-transform: uppercase;
-
+      text-transform: uppercase;
     color: #0B0808;
 
 }
-
+.footer-contacts{
+    widht:400px;;
+    padding: 0px;
+}
+.news-letter{
+    width: 150px;
+}
+.footer-social{
+    width: 181px;
+}
+.page-footer-title{
+    font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+color: #0B0808;
+}
 
 .catalog-filter-title {
-    font-family: 'PT Sans Narrow';
-    font-style: normal;
+   
     font-weight: 400;
     font-size: 21px;
     line-height: 30px;
-    /* identical to box height, or 143% */
-
     text-transform: uppercase;
-
     color: #000000;
 }
 
 .breadcrumbs-link {
-    font-family: 'PT Sans Narrow';
-    font-style: normal;
+   
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    /* identical to box height, or 171% */
-
     text-transform: uppercase;
-
     color: #000000;
 
 }
 
 .control-label {
-    font-family: 'PT Sans Narrow';
-    font-style: normal;
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    /* identical to box height, or 171% */
-
-    text-transform: uppercase;
-
+       text-transform: uppercase;
     color: #000000;
 
 }
 
 .product-card-price {
-    font-family: 'PT Sans Narrow';
-    font-style: normal;
-    font-weight: 400;
+       font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height, or 129% */
-
-    text-transform: uppercase;
-
+       text-transform: uppercase;
     color: #000000;
 }
 
 
-
-
-
-
-
-.block-one,
-.block-second {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 72px;
-}
 
 .news {
     width: 340px;
@@ -397,17 +387,47 @@ color: #000000;
 
 .page-footer-container {
     display: flex;
+    justify-content: space-between ;
+    align-items: center;
     width: 940px;
     margin: 0 auto;
 }
-
+.footer-social-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .footer-contacts {
-    width: 402px;
-    margin-right: 135px;
+    width: 190px;
+    
+}
+.footer-social-item{
+   
+width: 43px;
+height: 43px;
+background: #000000;
+border-radius: 0px;
 }
 
 .footer-social-item {
-    width: 180px;
+    width: 43px;
+}
+.newsletter-button{
+    
+width: 181px;
+height: 44px;
+background: #000000;
+border-radius: 0px;
+font-family: 'PT Sans Narrow';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+color: #FDF5F5;
+
 }
 
 /*catalog*/
