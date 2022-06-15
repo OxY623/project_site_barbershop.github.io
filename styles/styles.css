@@ -244,15 +244,10 @@ color: #000000;
     font-weight: 400;
 font-size: 14px;
 line-height: 24px;
-/* or 171% */
-
 text-align: center;
 text-transform: uppercase;
-
 color: #000000;
 }
-
-
 
 .page-footer {
     background: url("../img/footer.jpg"), #FCFCFC;
@@ -325,9 +320,17 @@ color: #0B0808;
     text-transform: uppercase;
     color: #000000;
 }
-
+/*Breadcrumbs*/
+.breadcrumbs{
+    display: flex;
+    margin:0;
+    padding: 0;
+    color:#000000;
+    list-style-type: none;
+}
+/*Link*/
 .breadcrumbs-link {
-   
+    margin-right: 32px;;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -491,4 +494,21 @@ color: #FDF5F5;
 
 .catalog-right-column {
     width: 700px;
+}
+.control-label{
+    font-weight: 700;
+}
+
+.sorting-type{
+    display:flex;
+    color: #000000;
+    background-color: #F8EEEE;
+}
+.sorting-type .button{
+    width: 56px;
+    height: 44px;
+}
+/*Item*/
+.product-card{
+    background-color: #FFFFFF;
 }
