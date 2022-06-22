@@ -264,6 +264,43 @@ color: #000000;
 
 }
 
+
+.appointmant-form{
+    display: grid;
+    grid-template-columns: 140px 140px ;
+    gap: 10px;
+
+}
+.field-group{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+}
+.appointmant-form .info{
+    display: none ;
+}
+.field-group label,
+.field-group input{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.appointmant-form-name{
+    grid-column: 1/-1;
+}
+
+.button-form{
+    grid-column: 1/-1;
+    justify-items: start;
+}
+.appointmant-form-phone{
+    grid-template-rows: 1/-1;
+}
+
+/*Title*/
+
+
 .contacts-subtitle {
         font-weight: 700;
     font-size: 14px;
@@ -512,3 +549,34 @@ color: #FDF5F5;
 .product-card{
     background-color: #FFFFFF;
 }
+
+.news-date{
+    display: block;
+  position: relative;
+  left: -100px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+
+}
+.slider-button {
+   
+width: 140px;
+height: 44.51px;
+background: #000000;
+border-radius: 0px;
+font-family: 'PT Sans Narrow';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+text-align: center;
+padding: 0;
+text-transform: uppercase;
+margin-right: 15px;
+margin-top: 50px;
+color: #FFFFFF;
+}
+.slider-next{
+    margin-right: 0;
+}
+
