@@ -593,13 +593,14 @@ color: #FFFFFF;
 .product-card{
     background-color: #efe9e9;
     width: 210px;
-  
+ 
     margin-bottom: 20px;
     margin-right: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
 align-items: center;
+padding-bottom: 0;
 }
 .product-card: :nth-child(3n){
     margin-right:0;
