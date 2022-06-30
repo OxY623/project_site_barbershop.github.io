@@ -5,44 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="draft/styles.css">
+    <!-- <link rel="stylesheet" href="draft/styles.css"> -->
     <link rel="stylesheet" href="styles/styles.css">
     <title>Catalog</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navigation">
-            <a href="index.html" class="navigation-logo">
-                <img class="page-header-logo" src="img/logo-mini.png" alt="logotip-barbershop" width="159px"
-                    height="35px">
-            </a>
-            <ul class="navigation-list">
-                <li class="navigatiom-item"><a class="navigatiom-link" href="#">главная</a></li>
-                <li class="navigatiom-item"><a class="navigatiom-link" href="#">информация</a></li>
-                <li class="navigatiom-item"><a class="navigatiom-link" href="#">новости</a></li>
-                <li class="navigatiom-item prise"><a class="navigatiom-link" href="#">прайслист</a></li>
-                <li class="navigatiom-item "><a class="navigatiom-link navigatiom-link-current" href="#">магазин</a>
-                </li>
-                <li class="navigatiom-item"><a class="navigatiom-link" href="#">контакты</a></li>
-
-            </ul>
-
-            <ul class="navigation-list navigatiom-user">
-                <li class="navigatiom-item"><a class="navigatiom-link" href="#"><span
-                            class="visually-hidden">Поиск</span></a></li>
-                <li class="navigatiom-item"><a class="navigatiom-link" href="#"><span
-                            class="visually-hidden">Корзина</span></a></li>
-                <li class="navigatiom-item"><a class="navigatiom-link" href="#"><span
-                          >Вход</span></a></li>
-            </ul>
-        </nav>
+    <nav class="navigation">
+        <a href="index.html" class="navigation-logo" href="">
+            <img class="page-header-logo-1"  src="img/logo-mini.png" alt="logotip-barbershop" width="159px"
+                height="35px">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigatiom-item"><a class="navigatiom-link" href="index.html">главная</a></li>
+          <li class="navigatiom-item"><a class="navigatiom-link" href="#">информация</a></li>
+          <li class="navigatiom-item"><a class="navigatiom-link" href="#">новости</a></li>
+          <li class="navigatiom-item"><a class="navigatiom-link" href="#">прайс-лист</a></li>
+          
+          <li class="navigatiom-item"><a class="navigatiom-link" href="#">контакты</a></li>
+  
+        </ul>
+     <!--navigations user-->
+        <ul class="navigation-list navigatiom-user">
+          <li class="navigatiom-item"><a class="navigatiom-link" href="#"><img src="img/search.svg" alt="search" width="24px" height="24px"><span class="visually-hidden">Поиск</span></a>
+          </li>
+          <li class="navigatiom-item"><a class="navigatiom-link" href="#"><img src="img/shopping-bag.svg" alt="shop" width="24px" height="24px"> <span class="visually-hidden">Корзина</span></a>
+          </li>
+          <li class="navigatiom-item"><a class="navigatiom-link" href="#"><span>Вход</span></a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    
 
     <main class="main-inner">
         <div class="page-container">
         <header class="inner-header">
-            <h1 class="inner-haeder-title">Каталог</h1>
+            <h1 class="inner-haeder-title visually-hidden">Каталог</h1>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-title"><a href="index.html" class="breadcrumbs-link">
                         главная
@@ -52,53 +51,39 @@
                     </a></li>
             </ul>
         </header>
-        <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цена:</legend>
+      
 
-            <div class="range">
-              <div class="range-scale">
-                <div class="range-bar" style="left: 42px; width: 136px">
-                  <button class="range-toggle toggle-min" type="button">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-                  <button class="range-toggle toggle-max" type="button">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="range-wrapper-inputs">
-                <label class="catalog-filter-label">
-                  от <input class="range-input" type="number" value="50" name="min-price"> ₽
-                </label>
-                <label class="catalog-filter-label">
-                  до <input class="range-input" type="number" value="1500" name="max-price" style="width: 37px"> ₽
-                </label>
-              </div>
-            </div>
-          </fieldset>
         <section class="catalog-products">
             <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
             <form class="catalog-filter" action="" method="get">
                 <fieldset class="catalog-filter-groiup">
                     <legend class="catalog-filter-title">ЦЕНА:</legend>
-                    <button class="range-toggle toggle-min">
+                    
+            <div class="range">
+                <div class="range-scale">
+                    <div class="range-bar" style="left: 42px; width: 136px">
+                    <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">
                             Изменить минимальную цену
                         </span>
                     </button>
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">
                             Изменить максимальную цену
                         </span>
                     </button>
-
+                </div>
+                </div>
+                
+ <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label">
-                        от <input class="catalog-filter-input" type="number" name="min-price"> byn
+                        от <input class="catalog-filter-input" type="number" name="min-price" value="1500" name="max-price" style="width: 37px"> byn
                     </label>
                     <label class="catalog-filter-label">
-                        до <input class="catalog-filter-input" type="number" name="max-price"> byn
+                        до <input class="catalog-filter-input" type="number" value="1500" name="max-price" style="width: 37px" name="max-price"> byn
                     </label>
+                </div>
+                </div>
                 </fieldset>
 
                 <fieldset class="catalog-filter-groiup">
@@ -190,7 +175,7 @@
                     </ul>
 
                 </fieldset>
-                <button class="button" type="submit">Показать</button>
+                <button class="button buttom5" type="submit">Показать</button>
             </form>
             <!--Sorting-->
 <div class="catalog-right-column">
@@ -334,59 +319,69 @@
         </div>
     </main>
 
+    <!--Footer-->
+
     <footer class="page-footer">
         <div class="page-footer-container">
+  
+  
         <section class="footer-contacts">
-            <h2 class="visually-hidden">контакты</h2>
-            <img src="img/logo-mini.png" alt="logotip barbershop Borodinsky" class="footer-contacts-logo" width="159px"
-                height="35px">
-            <address class="footer-contacts-adress">
-                <p class="footer-contacts-adress-text">адрес: г. санкт-петербург, ул. собаки павлова, д. 13</p>
-                <a class="footer-contacts-address-phone" href="tel:+375255096199">телефон: +7 (495) 666-02-66</a>
-            </address>
-            <a class="footer-contacts-map-link" href="#">как нас найти?</a>
+          <h2 class="visually-hidden">контакты</h2>
+          <img src="img/logo-mini.png" alt="logotip barbershop Borodinsky" class="footer-contacts-logo" width="159px"
+            height="35px">
+          <address class="footer-contacts-adress">
+            <p class="footer-contacts-adress-text">адрес: г. санкт-петербург, <br>ул. собаки павлова, д. 13</p>
+            <a class="footer-contacts-address-phone" href="tel:+375255096199">телефон: +7 (495) 666-02-66</a>
+          </address>
+          <a class="footer-contacts-map-link" href="#">как нас найти?</a>
         </section>
+  
+  
+  
         <section class="news-letter">
-            <h2 class="page-footer-title">Получайте лучшие подтверждения</h2>
-            <form class="newsletter-form" action="#" method="post">
-                <p class="newsletter-email">
-                    <label class="visually-hidden" for="newsletter-email">Email</label>
-                    <input class="field" placeholder="email@examole.com" type="email" name="neewsletter-email"
-                        id="neewsletter-email" required>
-                </p>
-                <button class="button newsletter-button" type="submit">
-                    <span class="visually-hidden">отправить</span>
-                </button>
-            </form>
-
+          <h2 class="page-footer-title">Получайте лучшие подтверждения</h2>
+          <form class="newsletter-form" action="#" method="post">
+            <p class="newsletter-email">
+              <label class="visually-hidden" for="newsletter-email">Email</label>
+              <input class="field" placeholder="email@examole.com" type="email" name="neewsletter-email"
+                id="neewsletter-email" required>
+            </p>
+            <button class="button newsletter-button" type="submit">
+              <span>отправить</span>
+            </button>
+          </form>
+  
         </section>
+  
+  
         <section class="footer-social">
-            <h2 class="page-footer-title">Давайте дружить</h2>
-            <ul class="footer-social-list">
-                <li class="footer-social-item">
-                    <a class="button" href="#">
-                        <span class="visually-hidden">VK</span>
-                    </a>
-                </li>
-
-
-                <li class="footer-social-item">
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Twiter</span>
-                    </a>
-                </li>
-
-
-                <li class="footer-social-item">
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Istagram</span>
-                    </a>
-                </li>
-            </ul>
-            <p class="about-text">дизайн сайта: <a href="#" class="iam">OxY</a></p>
+          <h2 class="page-footer-title">Давайте дружить</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button1" href="#">
+                <span class="visually-hidden">VK</span>
+              </a>
+            </li>
+  
+  
+            <li class="footer-social-item">
+              <a class="button1" href="#">
+                <span class="visually-hidden">Twiter</span>
+              </a>
+            </li>
+  
+  
+            <li class="footer-social-item">
+              <a class="button1" href="#">
+                <span class="visually-hidden">Istagram</span>
+              </a>
+            </li>
+          </ul>
+          <p class="about-text" style = "text-align:center;">дизайн сайта: <br><a href="#" class="iam">OxY</a></p>
         </section>
-</div>
-    </footer>
+      </div>
+      </footer>
+  
 
 
 </body>
