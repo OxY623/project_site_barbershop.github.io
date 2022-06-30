@@ -7,3 +7,5 @@ Link to the layout project in Figma: https://www.figma.com/file/yia8jWif604dPNgD
 
 Link to view :
 https://htmlpreview.github.io/?https://github.com/OxY623/project_site_barbershop.github.io/blob/main/index.html
+
+https://htmlpreview.github.io/?https://github.com/OxY623/project_site_barbershop.github.io/blob/main/catalog.html
